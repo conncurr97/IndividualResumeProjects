@@ -1,8 +1,9 @@
-package hw4;
+package javaClasses;
 
 import java.util.NoSuchElementException;
 
-import edu.princeton.cs.algs4.StdOut;
+import java.util.*;
+
 
 public class LinkedIntList {
 
@@ -64,7 +65,7 @@ public class LinkedIntList {
 	 */
 	public void printList() {
 		for (Node ptr = first; ptr != null; ptr = ptr.next) {
-			StdOut.print(ptr.item + " ");
+			System.out.println(ptr.item + " ");
 		}
 	}
 	
@@ -310,38 +311,32 @@ public class LinkedIntList {
 	 * @return a new list that looks like this list be with all the odds removed.
 	 */
 	public LinkedIntList evens() {  // TODO
-	
+
 		LinkedIntList answer = new LinkedIntList();
 		Node thisCurrent = first;
 		Node answerCurrent = answer.first;
-		
-		
-	
-	
-	while(thisCurrent != null) {
-		if(thisCurrent.item % 2 == 0) {
-			Node newNode = new Node();
-			newNode.item = thisCurrent.item;
-			
-			
-			
-			
-		}
-	
-		if(answerCurrent == null) {
-			answer.first = new Node();
-			
-		}
 
-		else {
-			answerCurrent.next = new Node();
-			
+
+		while (thisCurrent != null) {
+			if (thisCurrent.item % 2 == 0) {
+				Node newNode = new Node();
+				newNode.item = thisCurrent.item;
+
+
+			}
+
+			if (answerCurrent == null) {
+				answer.first = new Node();
+
+			} else {
+				answerCurrent.next = new Node();
+
+			}
+
+
+
 		}
-	
-		
 		return answer;
-	}
-	
 	}
 		
 
@@ -355,21 +350,18 @@ public class LinkedIntList {
 	 * @throws IllegalArgumentException if this list and the other list have have
 	 *                                  different lengths
 	 */
-	public LinkedIntList listAddition(LinkedIntList otherList) {  // TODO
-		
-		
-	}
+
 	
 	/* A small main to get started testing */
 	public static void main(String[] args) {
 		int[] a = {1, 2, 3, 4, 2, 5, 6};
 		LinkedIntList l = new LinkedIntList(a);
 		LinkedIntList test = new LinkedIntList();
-		StdOut.println(test);
-		StdOut.println(test.sum());
-		StdOut.println(l.evens());
-		StdOut.println("Before removing 2: " + l);
+		System.out.println(test);
+		System.out.println(test.sum());
+		System.out.println(l.evens());
+		System.out.println("Before removing 2: " + l);
 		l.removeFirstOccurrence(2);
-		StdOut.println("After removing 2:  " + l);
+		System.out.println("After removing 2:  " + l);
 	}
 }
