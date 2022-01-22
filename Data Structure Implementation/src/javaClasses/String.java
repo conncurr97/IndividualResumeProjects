@@ -1,13 +1,5 @@
 package String;
 
-/**
- * 
- * A class that mimics how Java's String class behaves.
- * Look at Java's String API for information on how each of these should behave.
- *
- */
-
-
 
 public class String {
 	
