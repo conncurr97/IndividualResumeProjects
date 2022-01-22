@@ -3,18 +3,6 @@ package javaClasses;
 import java.util.NoSuchElementException;
 
 
-/**
- * This is a skeleton file for your homework. Complete the functions below. You
- * may also edit the function "main" to test your code.
- * 
- * You should not use any loops or recursions. Your code needs to run in
- * constant time. It is OK if your testing code has loops (like in
- * checkInvariants).
- *
- * You must not add fields or static variables. As always, you must not change
- * the declaration of any method nor the name of the class or of this file.
- */
-
 public class Deque<T> {
 
 	private Node first; 	// A reference to the first item in the Dequeue (or
@@ -32,25 +20,17 @@ public class Deque<T> {
 							// node to the left)
 	}
 
-	/**
-	 * Construct an empty <code>Deque</code>.
-	 */
-	public Deque() {
-		// TODO - Repalce the line below with a correct solution.
+
+	public Deque() { // Creates empty Deque
 		first = null;
 		last = null;
 		N = 0;
 		
 	}
 
-	/**
-	 * Tests if the <code>Dequeue</code> is empty.
-	 * 
-	 * @return <code>true</code> if this <code>Deque</code> is empty and false
-	 *         otherwise.
-	 */
-	public boolean isEmpty() {
-		// TODO - Repalce the line below with a correct
+
+	public boolean isEmpty() { // Sees if Deque is empty
+
 		
 		
 		
@@ -66,23 +46,15 @@ public class Deque<T> {
 	
 	
 
-	/**
-	 * Returns the number of items currenlty in this <code>Deque</code>.
-	 * 
-	 * @return the number of items currenlty in this <code>Deque</code>
-	 */
-	public int size() {
-		// TODO - Repalce the line below with a correct solution.
+
+	public int size() { // returns size of Deque
+
 		return N;
 	}
 
-	/**
-	 * Inserts an item into the front of this <code>Deque</code>.
-	 * 
-	 * @param item the item to be inserted
-	 */
-	public void pushFront(T item) {
-		// TODO - Repalce the line below with a correct solution.
+
+	public void pushFront(T item) { // Inserts item too front of Deque
+
 		Node oldfirst = first;
 	       first = new Node();
 	       first.item = item;
@@ -110,14 +82,9 @@ public class Deque<T> {
 	
 	
 
-	/**
-	 * Inserts an item into the back of this <code>Deque</code>.
-	 * 
-	 * @param item the item to be inserted
-	 */
-	public void pushBack(T item) {
-	
-			// TODO - Repalce the line below with a correct solution.
+
+	public void pushBack(T item) { //Inserts item to back of Deque
+
 			 if (last == null)
 		       {
 		           first = new Node();
@@ -139,14 +106,9 @@ public class Deque<T> {
 		}
 
 
-	/**
-	 * Removes and returns the item at the front of this <code>Deque</code>.
-	 * 
-	 * @return the item at the front of this <code>Deque</code>.
-	 * @throws NoSuchElementException if this <code>Deque</code> is empty.
-	 */
+
 	public T popFront() {
-		// TODO - Repalce the line below with a correct solution.
+		// Removes item from first of deque
 	
 		if (N == 0)
 	           throw new NoSuchElementException();
@@ -174,14 +136,9 @@ public class Deque<T> {
 		
 	}
 
-	/**
-	 * Removes and returns the item at the back of this <code>Deque</code>.
-	 * 
-	 * @return the item at the back this <code>Deque</code>.
-	 * @throws NoSuchElementException if this <code>Deque</code> is empty.
-	 */
-	public T popBack() {
-		// TODO - Repalce the line below with a correct solution.
+
+	public T popBack() { //Removes item from back of Deque
+
 		if (N == 0)
 	           throw new NoSuchElementException();
 
@@ -242,7 +199,24 @@ public class Deque<T> {
 
 
     
-    } 
+    }
+
+	public static void main(java.lang.String[] args){
+		Deque<Integer> testDeque = new Deque<>();
+		System.out.println(testDeque.size());
+		testDeque.pushFront(5);
+		testDeque.pushFront(4);
+		testDeque.pushFront(2);
+		System.out.println(testDeque.size());
+		testDeque.popBack();
+		System.out.println(testDeque.size());
+		testDeque.pushBack(4);
+		System.out.println(testDeque.isEmpty());
+		testDeque.check();
+
+
+
+	}
     
 
 

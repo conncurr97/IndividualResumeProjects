@@ -1,7 +1,5 @@
 package javaClasses;
 
-import java.util.*;
-
 
 public class LinkedIntList {
 
@@ -109,7 +107,7 @@ public class LinkedIntList {
 
 	//Main function to test the methods
 
-	public static void main(String[] args) {
+	public static void main(java.lang.String[] args) {
 		int[] test = {5, 6, 7, 8, 9, 10, 11};
 		LinkedIntList testList = new LinkedIntList(test);
 		System.out.println(testList.toString());
@@ -118,14 +116,14 @@ public class LinkedIntList {
 		testList.removeLastOccurrence(11);
 		System.out.println(testList);
 
-		
+
 	}
 
 
-	public String toString() {
+	public java.lang.String toString() {
 		if (first == null)
 			return "List is Empty";
-		String ans = "[" + first.item;
+		java.lang.String ans = "[" + first.item;
 		Node pointer = first.next;
 		while (pointer != null) {
 			ans += ", " + pointer.item;

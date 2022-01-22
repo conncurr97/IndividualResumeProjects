@@ -1,5 +1,7 @@
-package String;
+package javaClasses;
 
+
+//Implements a string class from scratch
 
 public class String {
 	
@@ -19,17 +21,7 @@ public class String {
 		for(int i = 0; i < value.length; i++) {
 			data[i] = value[i];
 			
-			
-			
-			
-			
-			
-			
 		}
-		
-		
-
-	
 	}
 	
 	public char charAt(int index) {
@@ -45,13 +37,8 @@ public class String {
 		
 	}
 		
-	
-	
-	
-
-
 	public int indexOf(char ch) {
-		
+
 		
 		
 		for(int i = 0; i < data.length; i++) {
@@ -68,12 +55,6 @@ public class String {
 	}
 
 	public boolean equals(String other) {
-		
-		
-	
-		
-
-			
 		
 		
 		if(this.data.length != other.data.length) {
@@ -152,13 +133,7 @@ public class String {
 
 	public String replace(char oldChar, char newChar) {
 		
-		
-		
 		String z = new String(data);
-		
-		
-		
-		
 		
 		if(this.indexOf(oldChar) <= -1) {
 			
@@ -168,42 +143,25 @@ public class String {
 		}		
 			
 		
-		
-		 
-		
 		for(int i = 0; i < data.length; i++) {
 			
 			if(z.data[i] != oldChar){
 				z = new String(z.data);
-			
-			
-				
-				
-				
-				
-				
-				
-				}
+			}
 			
 			else if(z.data[i] == oldChar){
 				
 				z.data[i] = newChar;
 				z = new String(z.data);
 				
-				
-				
-				
 			}
 
-			
-		
 		}
-		
-		
 		return z;
 		
 	}
-	
+
+
 	
 	
 	}

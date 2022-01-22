@@ -1,14 +1,9 @@
 package javaClasses;
 
-import java.util.Arrays;
 
-public class arrays {
-	/**
-	 * Computes the sum of the ints in an array.
-	 * 
-	 * @param a the array of ints to be summed
-	 * @return the sum of the ints in <code>a</code>
-	 */
+
+public class array {
+
 	public int sum(int[] a) {
 		int sum = 0;
 		for (int value: a) {
@@ -19,13 +14,7 @@ public class arrays {
 		return sum; 
 	}
 	
-	
-	/**
-	 * Finds the maximum int in a non-empty array.
-	 * 
-	 * @param a a non-empty array of ints
-	 * @return the maximum int in the array
-	 */
+
 	public int largest(int[] a) {
 		
 		
@@ -47,13 +36,7 @@ public class arrays {
 		return max;
 		
 	}
-	
-	/**
-	 * Finds the second largest int in an array of unique ints
-	 * 
-	 * @param a an int array of unique ints with size > 1
-	 * @return the second largest int in the array
-	 */
+
 	public int secondLargest(int[] a) {
 		
 		
@@ -75,27 +58,12 @@ public class arrays {
 			}
 			 
 
-			
-			
-			
-			
 		}
-		
-	
 		
 		return largestTwo;
 		
 	}
-		
-	
-		
-		
-	/**
-	 * Returns the number of even ints in an array.
-	 * 
-	 * @param a an array of ints
-	 * @return the number of even ints in the array
-	 */
+
 	public int countEvens(int[] a) {
 		int count = 0; 
 		
@@ -106,15 +74,7 @@ public class arrays {
 		}
 		return count;
 	}
-	
-	/**
-	 * Returns a new array containing the even ints from an input array in
-	 * the same order they appear in the array.
-	 * 
-	 * @param a an array of ints
-	 * @return a new array containing the even ints from an input array in
-	 * the same order they appear in the array
-	 */
+
 	public int[] getEvens(int[] a) {
 		
 	
@@ -130,29 +90,21 @@ public class arrays {
 			
 		
 			}
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 		}
 	
 		
 		return array2;
-		
-	
-	
- 
 	}
 
 
-		public static void main (String[] args){
+		public static void main (java.lang.String[] args){
 
+		int[] testArray = new int[]{};
+
+		for (int i = 0; i < testArray.length; i++){
+			System.out.println(testArray[i]);
 		}
+
+	}
 
 }
