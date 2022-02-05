@@ -1,0 +1,214 @@
+header {height:100px;
+	background-image:url(travelhome.jpg);
+	background-repeat: no-repeat;
+ background-color: gray;
+  font-weight: bold;
+  font-size:55px;
+ font-family: Impact, Charcoal, sans-serif;
+   text-align: center;  
+   border:4px solid black ;
+   box-shadow: 3px 3px 3px
+   
+      }
+
+
+      #homepage1 {background-color: gray; 
+      	margin-right:  40px; 
+      	margin-left: 10px; 
+      	padding-left: 10px; 
+      	padding-bottom:10px; 
+      	border: 3px solid white;
+      	 margin-bottom: 15px   }
+    
+
+      #homepage2 {background-color: gray;
+       margin-right:  40px; 
+       margin-left: 10px;
+        padding-left: 10px; 
+        padding-bottom:10px;
+         margin-bottom: 20px;
+          border: 2px solid white; }
+
+      #europediv {background-color: gray;
+       margin-right:  40px;
+        margin-left: 10px;
+        padding-left: 10px;
+         padding-bottom:20px; 
+         margin-bottom: 20px;
+          border: 2px solid white;
+           margin-top: 20px; 
+           padding-right: 50px;  }
+
+
+      #traveldiv {background-color: gray;
+       margin-right:  40px;
+        margin-left: 10px;
+        padding-left: 10px;
+         padding-bottom:25px; 
+         margin-bottom: 20px;
+          border: 2px solid white;
+           margin-top: 20px; 
+           padding-right: 50px;
+
+           text-align: center;
+
+           height: 150px; 
+           font-size: 15px;   }
+
+           form {border: 3px solid white;
+           	background-color: gray;
+           	color: black; 
+           	font-weight: bold;
+
+           	margin-left: 250px;
+
+           	margin-right: 50px;
+
+           	margin-top: 40px;
+
+           	padding-top:30px;  
+
+           	padding-left: 30px;  }
+
+
+
+table {border: 5px solid white; color: white; width: 40%; height: 175px; border-collapse: collapse; margin-left: 450px; }
+
+th,td {border: 2px solid white; border-collapse: collapse; }
+
+
+      #traveldiv2 {background-color: gray;
+       margin-right:  40px;
+        margin-left: 10px;
+        padding-left: 10px;
+         padding-bottom:20px; 
+         margin-bottom: 20px; 
+          border: 2px solid white;
+           margin-top: 20px; 
+           padding-right: 50px;}
+
+
+
+      #traveldiv3{background-color: gray;
+ 
+      margin-right:  200px;
+      margin-left: 280px; 
+
+      padding-left: 40px;
+
+        
+         padding-bottom:20px; 
+         margin-bottom: 20px; 
+          border: 2px solid white;
+           margin-top: 20px; 
+           padding-right: 50px;}
+
+
+
+ #traveldiv4 {background-color: gray;
+       margin-right:  200px;
+        margin-left: 40px;
+        padding-left: 50px;
+         padding-bottom:20px; 
+         margin-bottom: 20px; 
+          border: 2px solid white;
+           margin-top: 40px; 
+           padding-right: 10px;}
+
+
+
+           textarea {width: 350px; height: 175px;}
+
+
+           
+
+
+          
+           
+
+           
+             
+
+ 
+
+
+
+
+
+
+
+
+
+      
+
+
+
+     
+
+body {background-color: #333333; font-family: Arial, sans-serif;
+}
+
+footer {padding-top: 7.5px; 
+	padding-bottom: 7.5px;  
+	font-size:1em; 
+	width: 100%; 
+	background-color: #808080;
+	 color: white; 
+	 font-weight: italic; 
+	 margin-left: 10px
+	 margin-right:10px;
+	 padding-left: 15px }
+
+
+
+      nav {background-color: gray;
+      	padding: 0;
+      	float: left;
+      	width:200px;
+      	text-align: center;
+      	margin-left: 5px; }
+
+      	nav a:link { color:white ; }
+nav a:visited{ color:#001433; }
+nav a:hover { color: #ffffff }
+      
+
+
+      	
+
+
+     
+
+
+nav ul  {list-style-type: none;
+padding: 0;
+margin: 0;
+
+}
+
+nav a {text-decoration: none;}
+
+
+nav li {border: 3px solid black;font-size: 1.25em;font-weight: bold;
+padding-top: 25px; padding-bottom: 25px; }
+header, nav, main, footer { display: block; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
